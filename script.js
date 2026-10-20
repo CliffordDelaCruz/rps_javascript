@@ -36,11 +36,11 @@ function playRound(rnumber) {
         computerScore += 0;
         humanScore += 0;
     } else if(compChoice === 'rock' && humanChoice === 'paper') {
-        computerScore += 1;
-        humanScore += 0;
-    } else if(compChoice === 'rock' && humanChoice === 'scissors') {
         computerScore += 0;
         humanScore += 1;
+    } else if(compChoice === 'rock' && humanChoice === 'scissors') {
+        computerScore += 1;
+        humanScore += 0;
     } else if(compChoice === 'paper' && humanChoice === 'rock') {
         computerScore += 1;
         humanScore += 0;
@@ -50,8 +50,7 @@ function playRound(rnumber) {
     } else if(compChoice === 'scissors' && humanChoice === 'rock') {
         computerScore += 0;
         humanScore += 1;
-    }
-    else if(compChoice === 'scissors' && humanChoice === 'paper') {
+    } else if(compChoice === 'scissors' && humanChoice === 'paper') {
         computerScore += 1;
         humanScore += 0;
     }
@@ -68,5 +67,5 @@ while (round <= 5) {
 if (computerScore > humanScore) {
     alert("Computer wins!");
 } else if(computerScore < humanScore) {
-    alert("Computer wins!");
+    alert("I won!");
 } else alert("It's a tie!");
